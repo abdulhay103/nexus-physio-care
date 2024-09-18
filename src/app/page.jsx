@@ -12,7 +12,7 @@ export default function Home() {
             className=" object-cover"
           />
         </div> */}
-        <p className=" text-xl text-white">Welcome to Nexus Physio Care</p>
+        <p className=" text-xl text-white">Welcome to Nexus Physio Care.</p>
         <h1 className=" text-4xl lg:text-7xl font-semibold text-white">
           We are comming soon..
         </h1>
