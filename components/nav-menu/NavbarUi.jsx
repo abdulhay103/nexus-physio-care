@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`${
+      className={` z-50 ${
         isSticky
           ? "bg-white shadow-md fixed w-full transition-all duration-500 ease-in-out"
           : "bg-white lg:bg-transparent fixed w-full"
@@ -92,29 +92,29 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-white shadow-md bg-gradient-to-t from-blue-50 to-transparent">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/"
-              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium"
+              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium hover:bg-blue-200 transition-all duration-300"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium"
+              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium hover:bg-blue-200 transition-all duration-300"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium"
+              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium hover:bg-blue-200 transition-all duration-300"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium"
+              className="block text-gray-800 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium hover:bg-blue-200 transition-all duration-300"
             >
               Contact
             </Link>

@@ -26,8 +26,7 @@ export default function RootLayout({ children }) {
       >
         <NavbarUi />
         {children}
-    
-      </body>
+          </body>
     </html>
   );
 }
