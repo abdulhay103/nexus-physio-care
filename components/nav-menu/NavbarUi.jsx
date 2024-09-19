@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logos/menu-logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,18 +30,23 @@ export default function Navbar() {
     <nav
       className={`${
         isSticky
-          ? "bg-white shadow-md fixed w-full transition-all duration-1000 ease-in-out"
+          ? "bg-white shadow-md fixed w-full transition-all duration-500 ease-in-out"
           : "bg-white lg:bg-transparent fixed w-full"
       } transform ${
         isSticky ? " translate-y-0" : ""
-      } transition-all duration-1000 ease-in-out`}
+      } transition-all duration-500 ease-in-out`}
     >
       <div className=" container">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-gray-800">
-              {/* <Image src={} className=" object-cover" width={100} height={100}/> */}
-              Nexus Physio Care
+            <Link href="/" className=" font-bold">
+              <Image
+                src={logo}
+                className=" object-cover"
+                width={220}
+                height={150}
+                alt="web-menu-logo"
+              />
             </Link>
           </div>
           <div className="hidden md:flex space-x-4 items-center">
