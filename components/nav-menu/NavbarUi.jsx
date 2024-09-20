@@ -28,49 +28,47 @@ export default function Navbar() {
 
   return (
     <nav
-      className={` z-50 py-3 lg:py-5 font-safodi ${
+      className={`z-50 py-3 font-safodi lg:py-5 ${
         isSticky
-          ? "bg-white shadow-lg fixed w-full hover-500 ease-in-out"
-          : "bg-white lg:bg-transparent fixed w-full"
-      } transform ${
-        isSticky ? " translate-y-0" : ""
-      } hover-500 ease-in-out`}
+          ? "hover-500 fixed w-full bg-white shadow-lg ease-in-out"
+          : "fixed w-full bg-white lg:bg-transparent"
+      } transform ${isSticky ? "translate-y-0" : ""} hover-500 ease-in-out`}
     >
-      <div className=" container">
+      <div className="container">
         <div className="flex justify-between">
           <div className="flex items-center">
-            <Link href="/" className=" font-bold">
+            <Link href="/" className="font-bold">
               <Image
                 src={logo}
-                className=" object-cover"
+                className="object-cover"
                 width={220}
                 height={150}
                 alt="web-menu-logo"
               />
             </Link>
           </div>
-          <div className="hidden md:flex space-x-4 items-center">
+          <div className="hidden items-center space-x-4 md:flex">
             <Link
               href="/"
-              className=" text-cyan-800 hover:text-cyan-500 text-lg font-semibold hover-300"
+              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className=" text-cyan-800 hover:text-cyan-500 text-lg font-semibold hover-300"
+              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
             >
               About
             </Link>
             <Link
               href="/services"
-              className=" text-cyan-800 hover:text-cyan-500 text-lg font-semibold hover-300"
+              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className=" text-cyan-800 hover:text-cyan-500 text-lg font-semibold hover-300"
+              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
             >
               Contact
             </Link>
@@ -101,29 +99,29 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md bg-gradient-to-t from-blue-50 to-transparent">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="bg-white bg-gradient-to-t from-blue-50 to-transparent shadow-md md:hidden">
+          <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <Link
               href="/"
-              className="block hover:text-cyan-800 px-3 py-2 rounded-md text-base hover:bg-blue-200 hover-300 font-Rubik font-medium text-blue-500"
+              className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block hover:text-cyan-800 px-3 py-2 rounded-md text-base hover:bg-blue-200 hover-300 font-Rubik font-medium text-blue-500"
+              className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="block hover:text-cyan-800 px-3 py-2 rounded-md text-base hover:bg-blue-200 hover-300 font-Rubik font-medium text-blue-500"
+              className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="block hover:text-cyan-800 px-3 py-2 rounded-md text-base hover:bg-blue-200 hover-300 font-Rubik font-medium text-blue-500"
+              className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               Contact
             </Link>

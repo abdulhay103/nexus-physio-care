@@ -4,27 +4,27 @@ import HeroImage from "../../public/home/Orthopedic-amico.png";
 
 export default function Hero() {
   return (
-    <div className=" bg-gradient-to-b from-cyan-100 to-transparent min-h-screen relative">
-      <div className=" absolute w-full lg:w-1/2 top-0 left-0 z-10">
-        <div className=" w-4/5 lg:pl-12 mx-auto lg:pt-32 2xl:pt-52 pt-32">
-          <h1 className=" text-2xl 2xl:text-5xl lg:text-[42px] leading-[1.6] font-siliguri font-black 2xl:leading-[1.85] 2xl:py-10 2xl:px-7 lg:leading-[1.7] border border-white text-cyan-800 rounded text-center py-4 shadow-lg">
+    <section className="relative h-[700px] bg-gradient-to-b from-cyan-100 to-transparent lg:min-h-screen">
+      <div className="absolute left-0 top-0 z-10 w-full lg:w-1/2">
+        <div className="mx-auto w-4/5 pt-32 lg:pl-12 lg:pt-40 xl:pt-44 2xl:pt-64">
+          <h1 className="font-h1 rounded border border-white py-4 text-center text-cyan-800 shadow-lg">
             অভিজ্ঞ ও গ্র্যাজুয়েট ফিজিওথেরাপিস্টদের সমন্বয়ে প্রতিষ্ঠিত একটি
             পরিপূর্ণ ফিজিওথেরাপি সার্ভিস পয়েন্ট।
           </h1>
         </div>
       </div>
-      <div className=" absolute right-0 top-0 w-full lg:w-1/2 min-h-screen bg-cyan-200 rounded-bl-full">
-        <div className=" flex min-h-screen lg:items-center items-end lg:justify-center">
-          <div className="w-80 h-80 lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px] relative">
+      <div className="absolute right-0 top-0 h-[700px] w-full rounded-bl-full bg-cyan-200 lg:min-h-screen lg:w-1/2">
+        <div className="flex h-[700px] items-end lg:min-h-screen lg:items-center lg:justify-center">
+          <div className="relative mx-auto h-80 w-80 lg:h-[500px] lg:w-[500px] 2xl:h-[600px] 2xl:w-[600px]">
             <Image
               src={HeroImage}
-              className=" object-cover "
+              className="object-cover"
               alt="physio-hero-img"
               fill
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
