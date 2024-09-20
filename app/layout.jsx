@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import NavbarUi from "@/components/nav-menu/NavbarUi";
+import FooterUi from "@/components/footer/FooterUi";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +14,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const hindSiliguri = localFont({
+  src: "./fonts/HindSiliguri-Bold.ttf",
+  variable: "--font-hind-siliguri",
+  weight: "700",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -22,10 +29,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hindSiliguri.variable} antialiased`}
       >
+            <Toaster position="bottom-left" />
         <NavbarUi />
         {children}
+        <FooterUi/>
           </body>
     </html>
   );

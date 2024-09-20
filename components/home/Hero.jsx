@@ -7,7 +7,7 @@ export default function Hero() {
     <div className=" bg-gradient-to-b from-cyan-100 to-transparent min-h-screen relative">
       <div className=" absolute w-full lg:w-1/2 top-0 left-0 z-10">
         <div className=" w-4/5 lg:pl-12 mx-auto lg:pt-32 2xl:pt-52 pt-32">
-          <h1 className=" text-2xl 2xl:text-5xl lg:text-[42px] leading-[1.6] font-black 2xl:leading-[1.85] 2xl:py-10 2xl:px-7 lg:leading-[1.7] border border-white text-cyan-800 rounded text-center py-4 shadow-lg">
+          <h1 className=" text-2xl 2xl:text-5xl lg:text-[42px] leading-[1.6] font-siliguri font-black 2xl:leading-[1.85] 2xl:py-10 2xl:px-7 lg:leading-[1.7] border border-white text-cyan-800 rounded text-center py-4 shadow-lg">
             অভিজ্ঞ ও গ্র্যাজুয়েট ফিজিওথেরাপিস্টদের সমন্বয়ে প্রতিষ্ঠিত একটি
             পরিপূর্ণ ফিজিওথেরাপি সার্ভিস পয়েন্ট।
           </h1>
