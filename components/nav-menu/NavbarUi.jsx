@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={` z-50 py-3 ${
+      className={` z-50 py-3 lg:py-5 ${
         isSticky
           ? "bg-white shadow-lg fixed w-full transition-all duration-500 ease-in-out"
           : "bg-white lg:bg-transparent fixed w-full"

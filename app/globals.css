@@ -36,3 +36,10 @@ body {
   background-color: #ff0000; /* Color on hover */
 }
 
+.section-padding{
+  @apply py-12 lg:py-20 xl:py-24 2xl:py-28;
+}
+
+.font-h2{
+  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-siliguri font-bold
+}
