@@ -28,6 +28,7 @@ module.exports = {
       Dancing: ["Dancing Script", "cursive"],
       Rubik: ["Rubik", "sans-serif"],
       siliguri: ["Hind Siliguri", "system-ui"],
+      safodi:["Sofadi One", "system-ui"]
     },
     screens: {
       esm: "480px",

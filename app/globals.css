@@ -19,27 +19,49 @@ body {
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 10px;
+  /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff; /* Background of the scrollbar track */
+  background: #ffffff;
+  /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #107030; /* Color of the scrollbar thumb */
-  border-radius: 6px; /* Rounded corners for the scrollbar thumb */
-  border: 3px solid #ffffff; /* Adds space around the thumb */
+  background-color: #107030;
+  /* Color of the scrollbar thumb */
+  border-radius: 6px;
+  /* Rounded corners for the scrollbar thumb */
+  border: 3px solid #ffffff;
+  /* Adds space around the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ff0000; /* Color on hover */
+  background-color: #ff0000;
+  /* Color on hover */
 }
 
-.section-padding{
-  @apply py-12 lg:py-20 xl:py-24 2xl:py-28;
+.section-padding {
+  @apply py-10 lg:py-16 xl:py-20 2xl:py-24;
 }
 
-.font-h2{
-  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-siliguri font-bold
+.bottom-padding {
+  @apply pb-10 lg:pb-16 xl:pb-20 2xl:pb-24;
+}
+
+.font-h2 {
+  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold
+}
+
+.font-h3 {
+  @apply text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold
+}
+
+.hover-300 {
+  @apply transition-all duration-300
+}
+
+.hover-500 {
+  @apply transition-all duration-500
 }
