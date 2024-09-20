@@ -31,11 +31,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${hindSiliguri.variable} antialiased`}
       >
-            <Toaster position="bottom-left" />
+        <Toaster position="bottom-left" />
         <NavbarUi />
         {children}
-        <FooterUi/>
-          </body>
+        <FooterUi />
+      </body>
     </html>
   );
 }
