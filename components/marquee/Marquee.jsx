@@ -7,12 +7,11 @@ const Marquee = ({ children, speed = 50 }) => {
     <div className="relative overflow-hidden whitespace-nowrap">
       <motion.div
         className="flex space-x-8"
-        animate={{ x: ["0%", "-100%"] }} // Smooth transition from 100% to -100%
+        animate={{ x: ["0%", "-100%"] }}
         transition={{ repeat: Infinity, ease: "linear", duration: speed }}
       >
-        {/* Render the content twice to make the animation seamless */}
-        <div className="flex space-x-8">{children}</div>
-        <div className="flex space-x-8">{children}</div>
+        <div className="flex space-x-8 lg:space-x-10">{children}</div>
+        <div className="flex space-x-8 lg:space-x-10">{children}</div>
       </motion.div>
     </div>
   );
