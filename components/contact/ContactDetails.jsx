@@ -1,10 +1,10 @@
 import Image from "next/image";
 import brush from "/public/others/brush.png";
 
-export default function ServiceArea() {
+export default function ContactDetails() {
   return (
-    <section className="section-padding container font-siliguri">
-      <div className="w-full pb-7 lg:pb-16 2xl:pb-16">
+    <section className="section-padding bg-slate-100 font-siliguri">
+      {/* <div className="w-full pb-7 lg:pb-16 2xl:pb-16">
         <h1 className="font-h1 text-center font-siliguri text-green-800">
           আমাদের সার্ভিস এরিয়া
         </h1>
@@ -13,8 +13,8 @@ export default function ServiceArea() {
             <Image src={brush} fill className="object-cover" alt="brush" />
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-12 gap-6 lg:gap-7">
+      </div> */}
+      <div className="container grid grid-cols-12 gap-6 lg:gap-7">
         <div className="hover-500 col-span-12 rounded-md border p-6 text-center text-cyan-700 shadow-lg hover:bg-orange-800 hover:text-white lg:col-span-4">
           <h2 className="font-h2 underline underline-offset-[6px]">
             ধানমন্ডি এরিয়া
