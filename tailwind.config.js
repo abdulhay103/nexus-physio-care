@@ -6,29 +6,24 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    // colors: {
-    //   primary: "#107030",
-    //   secondary: "#40BF6A",
-    //   deepBlue: "#2D64B9",
-    //   lightBlue: "#13C8EC",
-    //   amber: " #FFFF00",
-    //   lightCtreuse: "#DCFF64",
-    //   deepKhaki: "#405000",
-    //   gray: "#616161",
-    //   lightGray: "#acacac",
-    //   white: "#FFFFFF",
-    //   whiteSmoke: "#f8f6f3",
-    //   black: "#000000",
-    //   red: "#F33725",
-    //   purple: "#7D3C98",
-    //   orange: "#FF5733",
-    // },
+    extend: {
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+      },
+    },
+
     fontFamily: {
       Kanit: ["Kanit", "sans-serif"],
       Dancing: ["Dancing Script", "cursive"],
       Rubik: ["Rubik", "sans-serif"],
       siliguri: ["Hind Siliguri", "system-ui"],
-      safodi:["Sofadi One", "system-ui"]
+      safodi: ["Sofadi One", "system-ui"],
     },
     screens: {
       esm: "480px",

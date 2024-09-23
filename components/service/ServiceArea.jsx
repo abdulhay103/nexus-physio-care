@@ -1,6 +1,5 @@
 import Image from "next/image";
 import brush from "/public/others/brush.png";
-import LBP from "/public/services/back-pain.png";
 
 export default function ServiceArea() {
   return (
