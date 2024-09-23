@@ -1,10 +1,7 @@
-import Hero from '@/components/home/Hero'
-import React from 'react'
-
 export default function AboutPage() {
   return (
     <div>
-      <Hero/>
+      <h1 className="font-h1">About</h1>
     </div>
-  )
+  );
 }
