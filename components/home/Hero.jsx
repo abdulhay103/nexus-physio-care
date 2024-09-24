@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative h-[700px] bg-gradient-to-b from-cyan-100 to-transparent lg:min-h-screen">
       <div className="absolute left-0 top-0 z-10 w-full lg:w-1/2">
-        <div className="mx-auto w-4/5 pt-32 lg:pl-12 lg:pt-40 xl:pt-44 2xl:pt-64">
+        <div className="mx-auto w-4/5 pt-36 lg:pl-12 lg:pt-40 xl:pt-44 2xl:pt-64">
           <h1 className="font-h1 rounded border border-white py-4 text-center text-cyan-800 shadow-lg">
             অভিজ্ঞ ও গ্র্যাজুয়েট ফিজিওথেরাপিস্টদের সমন্বয়ে প্রতিষ্ঠিত একটি
             পরিপূর্ণ ফিজিওথেরাপি সার্ভিস পয়েন্ট।
