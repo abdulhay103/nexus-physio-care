@@ -14,6 +14,16 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const hindSiliguri = localFont({
+  src: "./fonts/HindSiliguri-Bold.ttf",
+  variable: "--font-hind-siliguri",
+  weight: "500, 600, 700, 800, 900",
+});
+const safodi = localFont({
+  src: "./fonts/SofadiOne-Regular.woff",
+  variable: "--font-safodi",
+  weight: "100 900",
+});
 
 export const metadata = {
   title: "Nexus Physio Care",
@@ -24,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${hindSiliguri.variable} ${safodi.variable} antialiased`}
       >
         <Toaster position="bottom-left" />
         <NavbarUi />
