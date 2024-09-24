@@ -17,8 +17,7 @@ export default function BreadcambUi({ text }) {
         fill
         alt="Breadcamb-image"
       />
-
-      <div className="absolute flex h-[200px] w-full items-center justify-center lg:h-[250px] 2xl:h-[350px]">
+      <div className="absolute mt-10 flex h-[200px] w-full items-center justify-center lg:mt-0 lg:h-[250px] 2xl:h-[350px]">
         <div className="text-center">
           <ol className="inline-flex list-none p-0 font-safodi">
             <li className="flex items-center">
@@ -52,7 +51,9 @@ export default function BreadcambUi({ text }) {
               );
             })}
           </ol>
-          <h2 className="font-h2 pt-2 font-siliguri text-cyan-900">{text}</h2>
+          <h2 className="font-h2 pt-2 font-siliguri text-cyan-900 lg:pt-5">
+            {text}
+          </h2>
         </div>
       </div>
     </section>
