@@ -68,6 +68,12 @@ export default function Navbar() {
               Services
             </Link>
             <Link
+              href="/blog"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
+            >
+              Blog
+            </Link>
+            <Link
               href="/contact"
               className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
@@ -113,6 +119,13 @@ export default function Navbar() {
               className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               Services
+            </Link>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              href="/blog"
+              className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
+            >
+              Blog
             </Link>
             <Link
               onClick={() => setIsOpen(!isOpen)}
