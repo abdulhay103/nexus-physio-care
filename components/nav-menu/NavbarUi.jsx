@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`z-50 py-3 font-safodi lg:py-4 ${
+      className={`z-50 py-3 font-siliguri font-semibold lg:py-4 ${
         isSticky
           ? "hover-500 fixed w-full bg-white shadow-lg ease-in-out"
           : "fixed w-full bg-white lg:bg-transparent"
@@ -51,25 +51,25 @@ export default function Navbar() {
           <div className="hidden items-center space-x-4 md:flex">
             <Link
               href="/"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Contact
             </Link>

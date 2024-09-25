@@ -60,11 +60,15 @@ body {
 }
 
 .font-h2 {
-  @apply text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold
+  @apply text-2xl xl:text-3xl 2xl:text-4xl font-bold
 }
 
 .font-h3 {
   @apply text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold
+}
+
+.font-h4 {
+  @apply text-lg lg:text-[20px] text-justify font-medium
 }
 
 .hover-300 {
