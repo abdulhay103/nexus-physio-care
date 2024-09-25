@@ -10,7 +10,7 @@ export default function BreadcambUi({ text }) {
   const segments = pathNames.split("/").filter((item) => item);
 
   return (
-    <section className="relative h-[200px] overflow-hidden bg-gradient-to-b from-cyan-100 to-transparent lg:h-[250px] 2xl:h-[350px]">
+    <section className="relative h-[200px] overflow-hidden bg-gradient-to-b from-cyan-100 to-transparent lg:h-[250px] 2xl:h-[320px]">
       <Image
         src={breadCambImg}
         className="object-cover opacity-20"
