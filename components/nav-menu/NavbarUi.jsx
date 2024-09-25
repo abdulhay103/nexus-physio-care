@@ -1,10 +1,11 @@
 "use client"; // Required for React hooks in App Router
 
 import { useState, useEffect } from "react";
-
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/logos/menu-logo.png";
+import { RxCross2 } from "react-icons/rx";
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`z-50 py-3 font-safodi lg:py-4 ${
+      className={`z-50 py-3 font-siliguri font-semibold lg:py-4 ${
         isSticky
           ? "hover-500 fixed w-full bg-white shadow-lg ease-in-out"
           : "fixed w-full bg-white lg:bg-transparent"
@@ -50,25 +51,25 @@ export default function Navbar() {
           <div className="hidden items-center space-x-4 md:flex">
             <Link
               href="/"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="hover-300 text-lg font-semibold text-cyan-800 hover:text-cyan-500"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Contact
             </Link>
@@ -76,22 +77,13 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="hover-300 text-gray-800 hover:text-blue-500 focus:outline-none"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
+              {isOpen ? (
+                <RxCross2 className="h-7 w-7" />
+              ) : (
+                <HiMiniBars3BottomRight className="h-7 w-7" />
+              )}
             </button>
           </div>
         </div>
@@ -102,24 +94,28 @@ export default function Navbar() {
         <div className="bg-white bg-gradient-to-t from-blue-50 to-transparent shadow-md md:hidden">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <Link
+              onClick={() => setIsOpen(!isOpen)}
               href="/"
               className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               Home
             </Link>
             <Link
+              onClick={() => setIsOpen(!isOpen)}
               href="/about"
               className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               About
             </Link>
             <Link
+              onClick={() => setIsOpen(!isOpen)}
               href="/services"
               className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
               Services
             </Link>
             <Link
+              onClick={() => setIsOpen(!isOpen)}
               href="/contact"
               className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
