@@ -1,7 +1,7 @@
 import BreadcambUi from "@/components/breadcrumb/BreadcrumbUi";
 
 export const metadata = {
-  title: "ব্লগ পড়ুন, জ্ঞানকে বিকশিত করুন",
+  title: "Blogs",
   description:
     "ফিজিওথেরাপি সম্পর্কিত নতুন টিপস ও ট্রিকস পেতে নিয়মিত আমাদের ব্লগ গুলো পড়ুন। ",
 };
