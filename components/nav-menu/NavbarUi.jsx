@@ -28,7 +28,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
+    <header
       className={`z-50 py-3 font-siliguri font-semibold lg:py-4 ${
         isSticky
           ? "hover-500 fixed w-full bg-white shadow-lg ease-in-out"
@@ -137,6 +137,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 }
