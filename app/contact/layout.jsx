@@ -1,4 +1,5 @@
 import BreadcambUi from "@/components/breadcrumb/BreadcrumbUi";
+import { Fragment } from "react";
 
 export const metadata = {
   title: "জরুরী যোগাযোগ করুন",
@@ -8,9 +9,9 @@ export const metadata = {
 
 export default function layout({ children }) {
   return (
-    <div>
+    <Fragment>
       <BreadcambUi text="যোগাযোগের অন্যতম মাধ্যম" />
       {children}
-    </div>
+    </Fragment>
   );
 }

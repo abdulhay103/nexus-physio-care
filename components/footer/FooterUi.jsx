@@ -56,7 +56,7 @@ export default function FooterUi() {
     }
   };
   return (
-    <div className="section-padding bg-cyan-800 font-siliguri text-lime-50">
+    <footer className="section-padding bg-cyan-800 font-siliguri text-lime-50">
       <div className="container">
         <div className="flex flex-col gap-6 pb-8 lg:flex-row lg:pb-12 2xl:pb-16">
           <div className="w-full">
@@ -179,6 +179,6 @@ export default function FooterUi() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
