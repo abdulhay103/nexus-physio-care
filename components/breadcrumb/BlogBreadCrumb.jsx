@@ -1,14 +1,10 @@
 "use client";
 import Image from "next/image";
 import breadCambImg from "../../public/others/breadcamb.png";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
 
-export default function BreadcambUi({ text }) {
-  const pathNames = usePathname();
-  console.log(pathNames);
-
+export default function BlogBreadCrumb({ pathNames, text }) {
   const segments = pathNames.split("/").filter((item) => item);
 
   return (

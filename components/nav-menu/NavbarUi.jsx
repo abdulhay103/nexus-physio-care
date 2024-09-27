@@ -7,7 +7,7 @@ import logo from "../../public/logos/menu-logo.png";
 import { RxCross2 } from "react-icons/rx";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
-export default function Navbar() {
+export default function NavbarUi() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
