@@ -5,8 +5,8 @@ import React from "react";
 export default function BottomPost() {
   return (
     <section className="section-padding-minimal container">
-      <div className="flex w-full flex-col lg:flex-row lg:gap-16 2xl:gap-20">
-        <div className="w-full">
+      <div className="flex w-full flex-col-reverse lg:flex-row lg:gap-16 2xl:gap-20">
+        <div className="w-full pt-3 lg:pt-0">
           <div className="py-3 font-siliguri 2xl:py-5">
             <Link href={`/blog/?slug`} className="font-h3 text-cyan-700">
               স্ট্রোকের পর ফিজিওথেরাপি গুরুত্বপূর্ণ ও কার্যকরী চিকিৎসা
