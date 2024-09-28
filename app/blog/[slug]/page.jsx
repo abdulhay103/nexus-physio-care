@@ -1,5 +1,4 @@
 import BlogBreadCrumb from "@/components/breadcrumb/BlogBreadCrumb";
-import React, { Fragment } from "react";
 import { FaFacebookF, FaInstagram, FaUser, FaYoutube } from "react-icons/fa";
 import { IoMdPricetags } from "react-icons/io";
 import { GoDiscussionOutdated } from "react-icons/go";
@@ -36,7 +35,7 @@ export default function blogDetails({ params }) {
               ফিজিওথেরাপি এই ধরণের রোগীদের নড়াচড়া করতে শিখতে সাহায্য করতে পারে
               যাতে এতে রোগীর দৈনন্দিন কাজকর্মে স্বাভাবিকতা ও সক্ষমতা ফায়ার আসে।
             </p>
-            <div className="relative my-3 w-full rounded-md bg-gray-500 lg:h-[350px] 2xl:h-[480px]">
+            <div className="relative my-3 h-64 w-full rounded-md bg-gray-500 lg:h-[350px] 2xl:h-[480px]">
               {/* <Image src={} fill className=" object-cover" alt="blog-img"/> */}
             </div>
             <p className="py-4 text-justify font-siliguri text-[17px] font-medium leading-8 text-gray-500">
@@ -164,31 +163,31 @@ export default function blogDetails({ params }) {
                   ক্যাটাগরিজ
                 </h3>
               </div>
-              <div className="mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700">
+              <div className="hover-300 mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700 hover:text-amber-700">
                 <Link href="/blog/all-blogs">কোমর বা পিঠ ব্যথা</Link>
                 <div className="flex h-12 w-14 items-center justify-center bg-cyan-700 text-white 2xl:h-14 2xl:w-16">
                   <p className="text-2xl">15</p>
                 </div>
               </div>
-              <div className="mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700">
+              <div className="hover-300 mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700 hover:text-amber-700">
                 <Link href="/blog/all-blogs">ঘাড় বা সৌল্ডার ব্যথা</Link>
                 <div className="flex h-12 w-14 items-center justify-center bg-cyan-700 text-white 2xl:h-14 2xl:w-16">
                   <p className="text-2xl">8</p>
                 </div>
               </div>
-              <div className="mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700">
+              <div className="hover-300 mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700 hover:text-amber-700">
                 <Link href="/blog/all-blogs">হাটু ও গোড়ালি ব্যথা</Link>
                 <div className="flex h-12 w-14 items-center justify-center bg-cyan-700 text-white 2xl:h-14 2xl:w-16">
                   <p className="text-2xl">5</p>
                 </div>
               </div>
-              <div className="mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700">
+              <div className="hover-300 mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700 hover:text-amber-700">
                 <Link href="/blog/all-blogs">জয়েন্ট বা মাংসপেশি ব্যথা</Link>
                 <div className="flex h-12 w-14 items-center justify-center bg-cyan-700 text-white 2xl:h-14 2xl:w-16">
                   <p className="text-2xl">10</p>
                 </div>
               </div>
-              <div className="mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700">
+              <div className="hover-300 mt-4 flex w-full items-center justify-between overflow-hidden rounded bg-orange-100 pl-5 font-siliguri text-lg font-bold text-cyan-700 hover:text-amber-700">
                 <Link href="/blog/all-blogs">স্ট্রোক বা প্যারালাইসিস</Link>
                 <div className="flex h-12 w-14 items-center justify-center bg-cyan-700 text-white 2xl:h-14 2xl:w-16">
                   <p className="text-2xl">25</p>
