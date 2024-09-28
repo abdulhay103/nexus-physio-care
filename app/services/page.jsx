@@ -15,12 +15,12 @@ export default function ServicePage() {
     <section className="">
       <div className="bg-gradient-to-b from-transparent via-cyan-50 to-transparent">
         <div className="container py-10 lg:py-12 xl:py-16">
-          <h2 className="font-h2 text-center font-siliguri text-green-700">
-            নেক্সাস ফিজিও কেয়ার সর্বোচ্চ সফলতার উদ্দেশ্যে ফিজিওথেরাপি সেবা
-            প্রদান করে আসছে। যার ফলে খুবই দ্রুত সময়ের মধ্যে রোগের নিরাময় সাধিত
-            হচ্ছে। এরই ধারাবাহিকতায় আমরা নিমোক্ত সমস্যার ফিজিওথেরাপি চিকিৎসা
-            প্রদান করে আসছি।
-          </h2>
+          <div className="mx-auto w-full lg:w-4/5 xl:w-9/12">
+            <h2 className="font-h2 text-center font-siliguri text-green-700">
+              নেক্সাস ফিজিও কেয়ার সর্বোচ্চ সফলতার উদ্দেশ্যে ফিজিওথেরাপি সেবা
+              প্রদান করে আসছে। আমাদের সেবাসমূহঃ
+            </h2>
+          </div>
           <div className="grid grid-cols-12 gap-6 pt-10 font-siliguri lg:gap-7 lg:pt-12 xl:pt-16 2xl:gap-10">
             <div className="hover-500 col-span-12 rounded-md border px-6 py-10 text-center text-orange-700 shadow-lg hover:bg-cyan-700 hover:text-white lg:col-span-4">
               <div className="flex items-center justify-center gap-5">
