@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const Marquee = ({ children, speed = 50 }) => {
+export default function Marquee({ children, speed = 50 }) {
   return (
     <div className="relative overflow-hidden whitespace-nowrap">
       <motion.div
@@ -15,6 +15,4 @@ const Marquee = ({ children, speed = 50 }) => {
       </motion.div>
     </div>
   );
-};
-
-export default Marquee;
+}
