@@ -8,7 +8,7 @@ import musclePain from "/public/services/muscle-pain.png";
 import parkinsons from "/public/services/parkinsons.png";
 import paralysis from "/public/services/paralysis.png";
 import Link from "next/link";
-import Pricing from "@/components/service/Pricing";
+import Pricing from "@/components/pricing/Pricing";
 
 export default function ServicePage() {
   return (
@@ -249,7 +249,6 @@ export default function ServicePage() {
           </div>
         </div>
       </div>
-
       <Pricing />
     </section>
   );
