@@ -7,7 +7,7 @@ import logo from "../../public/logos/menu-logo.png";
 import { RxCross2 } from "react-icons/rx";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
-export default function Navbar() {
+export default function NavbarUi() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -28,7 +28,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
+    <header
       className={`z-50 py-3 font-siliguri font-semibold lg:py-4 ${
         isSticky
           ? "hover-500 fixed w-full bg-white shadow-lg ease-in-out"
@@ -66,6 +66,12 @@ export default function Navbar() {
               className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
             >
               Services
+            </Link>
+            <Link
+              href="/blog"
+              className="hover-300 text-lg text-cyan-800 hover:text-orange-700"
+            >
+              Blog
             </Link>
             <Link
               href="/contact"
@@ -116,6 +122,13 @@ export default function Navbar() {
             </Link>
             <Link
               onClick={() => setIsOpen(!isOpen)}
+              href="/blog"
+              className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
+            >
+              Blog
+            </Link>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
               href="/contact"
               className="hover-300 block rounded-md px-3 py-2 font-Rubik text-base font-medium text-blue-500 hover:bg-blue-200 hover:text-cyan-800"
             >
@@ -124,6 +137,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </nav>
+    </header>
   );
 }
