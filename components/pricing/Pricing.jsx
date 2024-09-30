@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function Pricing() {
   return (
-    <section className="section-padding-minimal container pb-10 lg:pb-20 2xl:pb-28">
+    <section className="section-padding-minimal container">
       <h2 className="font-h2 pb-10 text-center font-siliguri text-cyan-700 underline lg:pb-14 xl:pb-16 2xl:pb-20">
         আমাদের সার্ভিস প্লানসমূহঃ
       </h2>
