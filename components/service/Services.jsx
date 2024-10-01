@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import LBP from "/public/services/back-pain.png";
 import cervicalPain from "/public/services/cervical-pain.png";
@@ -8,8 +9,18 @@ import musclePain from "/public/services/muscle-pain.png";
 import parkinsons from "/public/services/parkinsons.png";
 import paralysis from "/public/services/paralysis.png";
 import brush from "/public/others/brush.png";
+import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { useState } from "react";
 
 export default function Services() {
+  const [isMouseInter, setIsMouseInter] = useState(false);
+  const mouseInterEffect = () => {
+    setIsMouseInter(true);
+  };
+  const mouseLeaveEffect = () => {
+    setIsMouseInter(false);
+  };
   return (
     <section className="container">
       <div className="w-full pb-7 lg:pb-16 2xl:pb-16">
@@ -126,6 +137,18 @@ export default function Services() {
             </div>
           </div>
           <h2 className="font-h2 font-siliguri">প্যারালাইসিস</h2>
+        </div>
+      </div>
+      <div className="flex justify-end pt-10">
+        <div
+          className="flex items-center gap-4 font-siliguri text-lg font-medium text-cyan-800 underline underline-offset-4 lg:text-xl"
+          onMouseEnter={mouseInterEffect}
+          onMouseLeave={mouseLeaveEffect}
+        >
+          <Link href={`/services`}>সার্ভিসগুলো সম্পর্কে বিস্তারিত জানুন</Link>
+          <FaArrowRightLong
+            className={`hover-300 ${isMouseInter ? "-rotate-45 text-orange-700" : "rotate-[-25deg]"}`}
+          />
         </div>
       </div>
     </section>
