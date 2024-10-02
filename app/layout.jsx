@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import NavbarUi from "@/components/nav-menu/NavbarUi";
-import FooterUi from "@/components/footer/FooterUi";
+import NavbarUi from "@/components/shared/nav-menu/NavbarUi";
+import FooterUi from "@/components/shared/footer/FooterUi";
 import { Toaster } from "react-hot-toast";
 
 const geistSans = localFont({

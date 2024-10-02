@@ -1,4 +1,4 @@
-import BlogBreadCrumb from "@/components/breadcrumb/BlogBreadCrumb";
+import BlogBreadCrumb from "@/components/shared/breadcrumb/BlogBreadCrumb";
 import { FaFacebookF, FaInstagram, FaUser, FaYoutube } from "react-icons/fa";
 import { IoMdPricetags } from "react-icons/io";
 import { GoDiscussionOutdated } from "react-icons/go";
