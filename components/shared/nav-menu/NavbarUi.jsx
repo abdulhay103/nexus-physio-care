@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/logos/menu-logo.png";
+import logo from "/public/logos/menu-logo.png";
 import { RxCross2 } from "react-icons/rx";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 

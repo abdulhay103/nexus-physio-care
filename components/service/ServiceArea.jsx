@@ -7,8 +7,11 @@ export default function ServiceArea() {
   let serviceAreas = serviceArea;
 
   return (
-    <section className="section-padding container font-siliguri">
-      <div className="w-full pb-7 lg:pb-16 2xl:pb-16">
+    <section
+      className="section-padding container font-siliguri"
+      id="service-area"
+    >
+      <div className="w-full py-6 lg:py-12 2xl:py-14">
         <h1 className="font-h1 text-center font-siliguri text-green-800">
           আমাদের সার্ভিস এরিয়া
         </h1>

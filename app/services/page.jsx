@@ -8,8 +8,8 @@ import musclePain from "/public/services/muscle-pain.png";
 import parkinsons from "/public/services/parkinsons.png";
 import paralysis from "/public/services/paralysis.png";
 import Link from "next/link";
-import Pricing from "@/components/pricing/Pricing";
 import ContactCTA from "@/components/shared/ContactCTA";
+import PricingPlan from "@/components/shared/PricingPlan";
 
 export default function ServicePage() {
   return (
@@ -250,7 +250,7 @@ export default function ServicePage() {
           </div>
         </div>
       </div>
-      <Pricing />
+      <PricingPlan />
       <ContactCTA />
     </section>
   );
