@@ -15,7 +15,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 const hindSiliguri = localFont({
-  src: "./fonts/HindSiliguri-Bold.ttf",
+  src: "./fonts/HindSiliguri-Bold.woff",
   variable: "--font-hind-siliguri",
   weight: "500, 600, 700, 800, 900",
 });
