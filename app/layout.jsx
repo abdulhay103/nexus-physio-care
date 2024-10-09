@@ -9,11 +9,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 const hindSiliguri = localFont({
   src: "./fonts/HindSiliguri-Bold.woff",
   variable: "--font-hind-siliguri",
@@ -34,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${hindSiliguri.variable} ${safodi.variable} antialiased`}
+        className={`${geistSans.variable} ${hindSiliguri.variable} ${safodi.variable} antialiased`}
       >
         <Toaster position="bottom-left" />
         <NavbarUi />

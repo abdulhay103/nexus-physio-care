@@ -43,6 +43,10 @@ body {
   /* Color on hover */
 }
 
+.font-siliguri {
+  @apply font-[family-name:var(--font-hind-siliguri)]
+}
+
 .section-padding {
   @apply py-12 lg:py-16 xl:py-20 2xl:py-24;
 }
