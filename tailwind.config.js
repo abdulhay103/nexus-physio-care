@@ -22,7 +22,6 @@ module.exports = {
       Kanit: ["Kanit", "sans-serif"],
       Dancing: ["Dancing Script", "cursive"],
       Rubik: ["Rubik", "sans-serif"],
-      siliguri: ["Hind Siliguri", "system-ui"],
       safodi: ["Sofadi One", "system-ui"],
     },
     screens: {

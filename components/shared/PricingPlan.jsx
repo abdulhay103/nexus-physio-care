@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 
-export default function Pricing() {
+export default function PricingPlan() {
   return (
     <section className="section-padding-minimal container">
       <h2 className="font-h2 pb-10 text-center font-siliguri text-cyan-700 underline lg:pb-14 xl:pb-16 2xl:pb-20">

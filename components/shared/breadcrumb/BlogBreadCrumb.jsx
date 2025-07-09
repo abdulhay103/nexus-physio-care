@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import breadCambImg from "../../public/others/breadcamb.png";
+import breadCambImg from "/public/others/breadcamb.png";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
 

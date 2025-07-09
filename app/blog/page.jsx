@@ -1,7 +1,7 @@
 import AllPosts from "@/components/blog/AllPosts";
 import BottomPost from "@/components/blog/BottomPost";
 import Top5RecentPost from "@/components/blog/Top5RecentPost";
-import BlogBreadCrumb from "@/components/breadcrumb/BlogBreadCrumb";
+import BlogBreadCrumb from "@/components/shared/breadcrumb/BlogBreadCrumb";
 import { Fragment } from "react";
 
 export default function ContactPage() {

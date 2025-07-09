@@ -1,4 +1,4 @@
-import BreadcambUi from "@/components/breadcrumb/BreadcrumbUi";
+import BreadcambUi from "@/components/shared/breadcrumb/BreadcrumbUi";
 import { Fragment } from "react";
 
 export const metadata = {

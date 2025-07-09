@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import HeroImage from "../../public/home/Orthopedic-amico.png";
+import HeroImage from "/public/home/Orthopedic-amico.png";
 
 export default function Hero() {
   return (

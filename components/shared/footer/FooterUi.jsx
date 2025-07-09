@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../../public/logos/footer-logo.png";
+import logo from "/public/logos/footer-logo.png";
 import {
   FaFacebookSquare,
   FaHeart,
@@ -8,7 +8,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Link from "next/link";
-import SpinnerButton from "../shared/SpinnerButton";
+import SpinnerButton from "../SpinnerButton";
 import { ErrorToast, SuccessToast } from "@/utils/formHelper";
 import { useState } from "react";
 export default function FooterUi() {
